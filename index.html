@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer algorithm</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="array_inp">
+          <p>Size of the array:</p>
+          <input
+            id="a_size"
+            type="range"
+            min="20"
+            max="150"
+            step="1"
+            value="80"
+          />
+          <p>Speed of the algorithm:</p>
+          <input id="a_speed" type="range" min="1" max="5" step="1" value="4" />
+          <button style="text-align:left;margin-left: -3rem;"id="a_generate">
+            Click me to generate a random array!
+          </button>
+        </div>
+
+        <div class="header_r">
+          <p class="nav_h">Sorting Visualizer By Adit</p>
+
+          <div class="algos">
+            <button id="btn">Bubble</button>
+            <button id="btn" style="margin-right: 2em">Selection</button>
+            <button id="btn" style="margin-left: 1em">Insertion</button>
+            <button id="btn" style="margin-left: 1.9em">Merge</button>
+            <button id="btn" style="margin-left: 0.5em">Quick</button>
+            <button id="btn" style="margin-right: 5em">Heap</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="Info_1">
+        <h3 style="color: rgb(127, 43, 43) ;">TIME COMPLEXITY</h3>
+
+        <div class="Complexity_cont" id="Time_Complexity_Types">
+          <div class="C_Definitions">
+            <p class="Types" style="color: #7a431d">Worst case:</p>
+            <p id="Worst"></p>
+          </div>
+
+          <div class="C_Definitions">
+            <p class="Types" style="color: #7a431d">Average case:</p>
+            <p id="Average"></p>
+          </div>
+
+          <div class="C_Definitions">
+            <p class="Types" style="color: #7a431d">Best case:</p>
+            <p id="Best"></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="array_container"></div>
+
+      <div id="Info_2">
+        <h3 style="color: rgb(127, 43, 43)">SPACE COMPLEXITY</h3>
+
+        <div class="Complexity_cont" id="Space_Complexity_Types">
+          <div class="C_Definitions">
+            <p class="Types" style="color: #7a431d">Worst case:</p>
+            <p id="S_Worst"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="./main.js"></script>
+    <script src="./visualizer.js"></script>
+    <script src="./bubble_sort.js"></script>
+    <script src="./selection_sort.js"></script>
+    <script src="./insertion_sort.js"></script>
+    <script src="./merge_sort.js"></script>
+    <script src="./quick_sort.js"></script>
+    <script src="./heap.js"></script>
+  </body>
+</html>

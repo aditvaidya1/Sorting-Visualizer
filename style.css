@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body {
+  background-color: #ffeee4;
+}
+nav {
+  background-color: #e5c7bc;
+  color: rgb(127, 43, 43);
+  display: grid;
+  grid-template-columns: 30% 60%;
+  column-gap: 10%;
+  padding: 0% 5%;
+}
+
+nav .array_inp {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  place-content: center;
+  padding: 5% 0%;
+}
+
+nav .array_inp #a_size {
+  padding: 5% 0%;
+}
+
+nav .array_inp #a_speed {
+  padding: 5% 0%;
+}
+
+nav .array_inp #a_generate {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(127, 43, 43);
+  padding: 4% 0% 0% 0%;
+  padding-left: 20%;
+}
+
+nav .array_inp #a_generate:hover {
+  cursor: pointer;
+}
+
+nav .header_r {
+  display: flex;
+
+  flex-direction: column;
+}
+
+nav .header_r .nav_h {
+  display: inline-block;
+  font-size: xxx-large;
+  padding: 3% 0%;
+}
+
+nav .header_r .algos {
+  display: grid;
+  grid-template-columns: repeat(6, 16.66667%);
+  place-content: center;
+  padding: 2% 0%;
+}
+
+nav .header_r .algos button {
+  background-color: transparent;
+  border: none;
+  color: rgb(127, 43, 43);
+  outline: none;
+  padding: 5% 0%;
+  font-size: x-large;
+}
+
+nav .header_r .algos button:hover {
+  cursor: pointer;
+  color: #cf8b64;
+}
+
+nav .header_r .algos .lock_btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+#btn {
+  margin-right: 10px;
+}
+
+nav .header_r .algos .lock_btn:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .header_r .algos .butt_selected {
+  color: #cf8b64;
+}
+
+nav .header_r .algos .butt_selected:hover {
+  cursor: pointer;
+}
+
+nav .header_r .algos .butt_unselected:hover {
+  background-color: #ffeee4;
+  cursor: pointer;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+
+section .Complexity_cont {
+  margin-top: 5%;
+}
+
+section .Complexity_cont .C_Definitions {
+  margin-top: 5%;
+}
+
+section .Complexity_cont .C_Definitions p {
+  display: inline;
+}
+
+section .Complexity_cont .C_Definitions p.Types {
+  font-size: medium;
+  text-transform: none;
+}
+
+section #Info_1 {
+  padding: 20% 10%;
+}
+
+section #Info_1 h3 {
+  text-decoration: underline;
+}
+
+section #array_container {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+}
+
+section #Info_2 {
+  padding: 20% 10%;
+}
+
+section #Info_2 h3 {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 480px) {
+}
+
+@media (min-width: 481px) and (max-width: 1250px) {
+}
+
+@media (min-width: 1251px) {
+}
